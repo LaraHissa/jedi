@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[49]:
 
 
 import numpy as np
@@ -23,7 +23,7 @@ from numpy import corrcoef
 from scipy.spatial import distance
 
 
-# In[7]:
+# In[50]:
 
 
 def dist_euclidian(v1,v2):
@@ -42,124 +42,80 @@ def measure_angle(arcc):
     return math.degrees(np.arccos(arcc))
 
 
-# In[8]:
+# In[51]:
 
 
-s1 = np.array([[1,0.92,0.95,1], 
-               [0.92,0.52,0.65,0.74],
-               [0.82,0.44,0.65,0.74],
-               [0.74,0.32,0.65,0.75]
+s1 = np.array([[1, 2, 3, 4, 5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 4, 1], 
+               [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 5, 1]
               ], np.float)
+s1_desc = "| [correlacao cresc]"
+
+s2 = np.array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+                4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+                5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 
+                4, 1
+               ], 
+               
+               [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+                5, 1
+                ]
+              ], np.float)
+s2_desc = "| [correlacao nula]"
+
+s3 = np.array([[1, 2, 3, 4, 5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 4, 1], 
+               [28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 5, 1]
+              ], np.float)
+s3_desc = "| [correlacao desc"
+
+s4 = np.array([[1, 2, 3, 4, 5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 4, 1], 
+              [2800, 2600, 2400, 2200, 2000, 1800, 1600, 1400, 1200, 1000, 800, 600, 400, 200, 5, 1]
+              ], np.float)
+s4_desc = "| [correlacao  desc + "
 
 
-# In[36]:
+# In[52]:
 
 
-for x in range(4):
-    for y in range(4):
-        print("cor(",x,",", y, ")", (measure_correlation(s1[x],s1[y])))
-    print("------")
+plt.plot(s1[0], s1[1], 'ro')   
+x1, y1 = [4, 1], [5, 1]
+plt.plot(x1, y1, marker = 'o')
+plt.show()
+
+
+# In[53]:
+
+
+plt.plot(s2[0], s2[1], 'ro')   
+x1, y1 = [4, 1], [5, 1]
+plt.plot(x1, y1, marker = 'o')
+plt.show()
+
+
+# In[54]:
+
+
+plt.plot(s3[0], s3[1], 'ro')
+x1, y1 = [4, 1], [5, 1]
+plt.plot(x1, y1, marker = 'o')
+plt.show()
 
 
 # In[55]:
 
 
-m=np.zeros((4,4))
-
-for x in range(4):
-    line = ""
-    for y in range(4):
-        m[x,y]=measure_correlation(s1[x],s1[y])
-        value = measure_correlation(s1[x],s1[y])
-        value = round(value,3)
-        line = line + str(value) + " "
-        
-    #print(line)
-#print (m)
-plt.imshow(m)
-plt.show()
-
-
-# In[43]:
-
-
-x = round(5.76543, 2)
-print(x)
-
-
-# In[31]:
-
-
-print((measure_correlation(s1[0],s1[1])))
-print((measure_cossine(s1[0],s1[1])))
-plt.plot(s1[0], s1[1], 'ro')   
-plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[16]:
-
-
-print((measure_correlation(s1[0],s1[2])))
-print((measure_cossine(s1[0],s1[2])))
-plt.plot(s1[0], s1[2], 'ro')   
-plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[4]:
-
-
-plt.plot(s1[0], s1[1], 'ro')   
-x1, y1 = [1, 4], [5, 1]
-plt.plot(x1, y1, marker = 'o')
-plt.show()
-
-
-# In[5]:
-
-
-plt.plot(s2[0], s2[1], 'ro')   
-x1, y1 = [1, 4], [5, 1]
-plt.plot(x1, y1, marker = 'o')
-plt.show()
-
-
-# In[6]:
-
-
-plt.plot(s3[0], s3[1], 'ro')
-x1, y1 = [1, 4], [5, 1]
-plt.plot(x1, y1, marker = 'o')
-plt.show()
-
-
-# In[7]:
-
-
 plt.plot(s4[0], s4[1], 'ro')  
-x1, y1 = [1, 4], [5, 1]
+x1, y1 = [4, 1], [5, 1]
 plt.plot(x1, y1, marker = 'o')
 plt.show()
 
 
-# In[8]:
+# In[56]:
 
 
 df1 = pd.DataFrame(np.transpose(s1))
@@ -167,7 +123,7 @@ df1.corr()
 np.linalg.det(df1.corr())
 
 
-# In[9]:
+# In[57]:
 
 
 df2 = pd.DataFrame(np.transpose(s2))
@@ -175,7 +131,7 @@ df2.corr()
 np.linalg.det(df2.corr())
 
 
-# In[10]:
+# In[58]:
 
 
 df3 = pd.DataFrame(np.transpose(s3))
@@ -183,7 +139,7 @@ df3.corr()
 np.linalg.det(df3.corr())
 
 
-# In[11]:
+# In[59]:
 
 
 df4 = pd.DataFrame(np.transpose(s4))
@@ -191,7 +147,7 @@ df4.corr()
 np.linalg.det(df4.corr())
 
 
-# In[12]:
+# In[60]:
 
 
 print((measure_correlation(s1[0],s1[1])))
@@ -199,7 +155,7 @@ print((measure_correlation(s2[0],s2[1])))
 print((measure_correlation(s3[0],s3[1])))
 
 
-# In[13]:
+# In[61]:
 
 
 print(dist_euclidian(s1[0][14],s1[1][14]))
@@ -207,19 +163,19 @@ print(dist_euclidian(s2[0][16],s2[1][16]))
 print(dist_euclidian(s3[0][14],s3[1][14]))
 
 
-# In[14]:
+# In[62]:
 
 
 s1[0]
 
 
-# In[15]:
+# In[63]:
 
 
 s1[1]
 
 
-# In[16]:
+# In[64]:
 
 
 S1 = df1.corr()
@@ -228,21 +184,21 @@ S3 = df3.corr()
 S4 = df4.corr()
 
 
-# In[17]:
+# In[65]:
 
 
 p1 = (s1[0][14],s1[1][14])
 p1
 
 
-# In[18]:
+# In[66]:
 
 
 p2 = (s1[0][15],s1[1][15])
 p2
 
 
-# In[19]:
+# In[67]:
 
 
 de = dist_euclidian(p1,p2)
@@ -250,7 +206,7 @@ de_desc = "| [distancia]"
 print(dist_euclidian(p1,p2))
 
 
-# In[20]:
+# In[68]:
 
 
 dm1 = distance.mahalanobis(p1, p2, S1)
@@ -267,7 +223,7 @@ print(distance.mahalanobis(p1, p2, S3), s3_desc)
 print(distance.mahalanobis(p1, p2, S4), s4_desc)
 
 
-# In[21]:
+# In[69]:
 
 
 print(abs(1 -  dm1/de) * 100)

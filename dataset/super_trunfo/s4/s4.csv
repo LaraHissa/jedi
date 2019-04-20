@@ -1,5 +1,5 @@
-type; name; speed; hp; kW; t100; cc;cil; weight
-'vw alema';polo sprint'; 207; 156; 115; 7.8; 1900;4;976
+type;name;speed;hp;kW;t100;cc;cil;weight
+'vw alema';'polo sprint'; 207; 156; 115; 7.8; 1900;4;976
 'vw alema';'cup polo'; 190; 88; 65; 8.5; 1300;4;730
 'vw alema';'polo cupe gt'; 170; 75; 55; 11.5; 1300;4;730
 'vw alema';'rally golf gti 1800'; 200; 170; 125; 6.8; 1800;4;880

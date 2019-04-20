@@ -1,25 +1,25 @@
 type;name;speed;hp;kW;t100;cc;cil;weight
-'vw alema';'polo sprint'; 207; 156; 115; 7.8; 1900;4;976
-'vw alema';'cup polo'; 190; 88; 65; 8.5; 1300;4;730
-'vw alema';'polo cupe gt'; 170; 75; 55; 11.5; 1300;4;730
-'vw alema';'rally golf gti 1800'; 200; 170; 125; 6.8; 1800;4;880
-'vw alema';'golf gti'; 191; 112; 82; 9.7; 1800;4;920
-'vw alema';'golf conversivel gls'; 164; 90; 66; 11; 1800;4;945
-'vw alema';'jetta gt'; 189; 112; 82; 10; 1800;4;970
-'vw alema';'jetta carat'; 176; 90; 66; 11.1; 1800;4;930
-'vw alema';'jetta cl turbo diesel'; 158; 70; 51; 15; 1600;4;975
-'vw alema';'bi motor scirocco'; 245; 282; 208; 5.9; 3600;8;1378
-'vw alema';'scirocco gtx'; 191; 112; 82; 9.1; 1800;4;920
-'vw alema';'scirocco gtl'; 178; 90; 66; 10.2; 1800;4;890
-'vw alema';'passat gt'; 197; 136; 100; 9.5; 2200;5;1130
-'vw alema';'passat variant'; 182; 115; 85; 11.1; 2000;5;1265
-'vw alema';'passat carat'; 169; 90; 66; 11.5; 1800;4;985
-'vw alema';'caravelle carat'; 139; 90; 66; 21.5; 1900;4;1510
-'vw alema';'caravelle syncro'; 125; 78; 57; 26.5; 1900;4;1510
-'vw alema';'westfalia joker 1'; 115; 60; 44; 33; 1900;4;1800
-'vw alema';'student'; 178; 72; 53; 10.3; 1300;4;590
-'vw alema';'auto 2000'; 180; 75; 55; 12; 1100;4;780
-'vw alema';'irvw 3'; 212; 180; 132; 7.4; 1800;4;1175
-'vw alema';'mexico kafer'; 115; 34; 25; 32; 1200;4;780
-'vw alema';'kafer 1303 cabriolet'; 130; 50; 37; 20.5; 1600;4;930
-'vw alema';'weltmeister kafer'; 130; 50; 37; 20.5; 1600;4;890
+'vw alema';'polo sprint';207;156;115;7.8;1900;4;976
+'vw alema';'cup polo';190;88;65;8.5;1300;4;730
+'vw alema';'polo cupe gt';170;75;55;11.5;1300;4;730
+'vw alema';'rally golf gti 1800';200;170;125;6.8;1800;4;880
+'vw alema';'golf gti';191;112;82;9.7;1800;4;920
+'vw alema';'golf conversivel gls';164;90;66;11;1800;4;945
+'vw alema';'jetta gt';189;112;82;10;1800;4;970
+'vw alema';'jetta carat';176;90;66;11.1;1800;4;930
+'vw alema';'jetta cl turbo diesel';158;70;51;15;1600;4;975
+'vw alema';'bi motor scirocco';245;282;208;5.9;3600;8;1378
+'vw alema';'scirocco gtx';191;112;82;9.1;1800;4;920
+'vw alema';'scirocco gtl';178;90;66;10.2;1800;4;890
+'vw alema';'passat gt';197;136;100;9.5;2200;5;1130
+'vw alema';'passat variant';182;115;85;11.1;2000;5;1265
+'vw alema';'passat carat';169;90;66;11.5;1800;4;985
+'vw alema';'caravelle carat';139;90;66;21.5;1900;4;1510
+'vw alema';'caravelle syncro';125;78;57;26.5;1900;4;1510
+'vw alema';'westfalia joker 1';115;60;44;33;1900;4;1800
+'vw alema';'student';178;72;53;10.3;1300;4;590
+'vw alema';'auto 2000';180;75;55;12;1100;4;780
+'vw alema';'irvw 3';212;180;132;7.4;1800;4;1175
+'vw alema';'mexico kafer';115;34;25;32;1200;4;780
+'vw alema';'kafer 1303 cabriolet';130;50;37;20.5;1600;4;930
+'vw alema';'weltmeister kafer';130;50;37;20.5;1600;4;890
